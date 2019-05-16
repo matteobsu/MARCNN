@@ -1,0 +1,6 @@
+activate neuralnets
+cd C:\Users\mbusi\Documents\marcnns-master\src\
+
+python main_spectral.py -r Z:\CNN_MAR\MAR_Project\Trainingdata8ch\muTiNorm\ -m first_run_{epoch:04d} -T Z:\CNN_MAR\MAR_Project\Trainingdata8ch\train\ -V Z:\CNN_MAR\MAR_Project\Trainingdata8ch\validation\
+
+python eval_MCCNN_from_directory.py -m Z:\CNN_MAR\MAR_Project\Trainingdata8ch\muTiNorm\ -D Z:\CNN_MAR\MAR_Project\Trainingdata8ch\test\ -O Z:\CNN_MAR\MAR_Project\Trainingdata8ch\muTiNorm\results\ -M first_run_0050 -H Z:\CNN_MAR\MAR_Project\Trainingdata8ch\muTiNorm\output\first_run_0050_Thist.pkl
