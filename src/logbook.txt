@@ -1,0 +1,9 @@
+2018-06-04
+- try separate 1D-2D-3D-networks
+- dumps fixed... some images are completely black! to be investigated 
+- try other type of inputs
+- christian will fix dumping issues and look into why some images are black
+- possibly have option to not use cache/memory to simplify!
+some artifacts found:
+- double shapes
+- validation and training dropping dramatically to 0
