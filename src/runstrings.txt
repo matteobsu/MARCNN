@@ -1,8 +1,6 @@
 activate neuralnets
-cd C:\Users\mbusi\Documents\MARCNN-master\src\
+cd C:\Users\mbusi\Documents\marcnns-master\src\
 
-python main_spectral_inMem.py -r D:\mbusi\SCNN\20190624_TtTp_fuse\ -m pack1{epoch:04d} -T D:\mbusi\SCNN\final_data_32ch\TtTp\train\ -V D:\mbusi\SCNN\final_data_32ch\TtTp\validation\ --augment
+python main_spectral.py -r Z:\CNN_MAR\MAR_Project\Trainingdata8ch\muTiNorm\ -m first_run_{epoch:04d} -T Z:\CNN_MAR\MAR_Project\Trainingdata8ch\train\ -V Z:\CNN_MAR\MAR_Project\Trainingdata8ch\validation\
 
-python eval_spectral.py -m D:\mbusi\SCNN\20190624_TtTp_fuse\ -D D:\mbusi\SCNN\final_data_32ch\TtTp\test\ -O D:\mbusi\SCNN\20190624_TtTp_fuse\results_1\ -M pack10050 -H D:\mbusi\SCNN\20190624_TtTp_fuse\output\pack10050_Thist.pkl
-
-python eval_spectral.py -m D:\mbusi\SCNN\20190624_TtTp_fuse\ -D D:\mbusi\SCNN\final_data_32ch\190613_PlasticsConeBeam\Tt\ -O D:\mbusi\SCNN\20190624_TtTp_fuse\results_plastics\ -M pack10050 -H D:\mbusi\SCNN\20190624_TtTp_fuse\output\pack10050_Thist.pkl
+python eval_MCCNN_from_directory.py -m Z:\CNN_MAR\MAR_Project\Trainingdata8ch\muTiNorm\ -D Z:\CNN_MAR\MAR_Project\Trainingdata8ch\test\ -O Z:\CNN_MAR\MAR_Project\Trainingdata8ch\muTiNorm\results\ -M first_run_0050 -H Z:\CNN_MAR\MAR_Project\Trainingdata8ch\muTiNorm\output\first_run_0050_Thist.pkl

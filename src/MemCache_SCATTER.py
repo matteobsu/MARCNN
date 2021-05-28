@@ -17,7 +17,8 @@ import math
 WORKERS = 12
 #CACHE_SIZE = 32
 CACHE_SIZE = 128
-CACHE_REUSE_PERIOD=12288  # should be at least WORKERS * CACHE_SIZE
+#CACHE_REUSE_PERIOD=12288  # should be at least WORKERS * CACHE_SIZE
+CACHE_REUSE_PERIOD=6144
 
 class MemoryCache(object):
 

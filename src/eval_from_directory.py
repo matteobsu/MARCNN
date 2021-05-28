@@ -156,6 +156,7 @@ if __name__ == '__main__':
     output_type = TYPES["CT"]
 
     flatField=None
+
     if ("fullRun" in argDict) and (argDict["fullRun"]!=None) and (argDict["fullRun"]!=False):
         fullRun=True
     
@@ -235,6 +236,8 @@ if __name__ == '__main__':
     maeFile.close()
     del mseArray
     del maeArray
+    #plt.show()
+    #print (type(Mhist))
     
     lenX = len(inputFileArray)
 
@@ -254,6 +257,7 @@ if __name__ == '__main__':
         print(modelName[0])
         model.load_weights(weightsName[0])
         print(weightsName[0])
+
         
         modelComp = None
         if len(modelName)>1:
